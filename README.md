@@ -19,17 +19,26 @@ import trapperKeeper from "DEGJS/trapperKeeper";
 
 /* Save a key/value pair to a Map store, which will be automatically created if one does not exist. */
 trapperKeeper.set('userData', {
-    firstName: 'Robert'
+    firstName: 'Brandon',
+    lastName: 'Walsh'
+});
+trapperKeeper.set('locationData', {
+    city: 'Beverly Hills',
+    state: 'CA',
+    zipCode: '90210'
 });
 
 /* Get the full Map collection, which contains all individual Map stores */
-console.log(trapperKeeper.get());
+let allStores = trapperKeeper.get(); // returns a Map collection containing both the userData and locationData Map stores
+console.log(allStores.size); // 2
 
-/* Get a specific Map store */
-console.log(trapperKeeper.get('userData'));
+/* Get a specific Map store, with full access to the Map's properties and methods */
+let userDataStore = trapperKeeper.get('userData');
+console.log(userDataStore.size) // 2
+console.log(userDataStore.get('firstName')) // "Brandon"
 
 /* Get a specific Map store value */
-console.log(trapperKeeper.get('userData', 'firstName'));
+console.log(trapperKeeper.get('locationData', 'zipCode')); // "90210"
 
 ```
 
