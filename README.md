@@ -33,12 +33,12 @@ let allStores = trapperKeeper.get(); // returns a Map collection containing both
 console.log(allStores.size); // 2
 
 /* Get a specific Map store, with full access to the Map's properties and methods */
-let userDataStore = trapperKeeper.get('userData');
-console.log(userDataStore.size) // 2
-console.log(userDataStore.get('firstName')) // "Brandon"
+let locationDataStore = trapperKeeper.get('locationData');
+console.log(locationDataStore.size) // 3
+console.log(locationDataStore.get('zipCode')) // "90210"
 
 /* Get a specific Map store value */
-console.log(trapperKeeper.get('locationData', 'zipCode')); // "90210"
+console.log(trapperKeeper.get('userData', 'firstName')); // "Brandon"
 
 ```
 
