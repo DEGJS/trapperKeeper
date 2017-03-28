@@ -19,7 +19,7 @@ import trapperKeeper from "DEGJS/trapperKeeper";
 
 /* Save a key/value pair to a Map store, which will be automatically created if one does not exist. */
 trapperKeeper.set('userData', {
-	firstName: 'Robert'
+    firstName: 'Robert'
 });
 
 /* Get the full Map collection, which contains all individual Map stores */
