@@ -47,7 +47,7 @@ Type: `String`
 The optional name of the individual Map store to be returned. If omitted, the root Map collection containing all Map stores will be returned.
 
 #### value
-Type: `String` 
+Type: `String`   
 The optional name of the Map store value to be returned. If omitted, returns either the root Map collection or an individual Map store, depending on `key` setting.
 
 
