@@ -1,0 +1,28 @@
+{
+    "name": "trapperKeeper",
+    "version": "0.0.1",
+    "description": "A module for storing a basic web application's state.",
+    "keywords": [
+    	"trapperKeeper",
+        "DEGJS"
+    ],
+    "author": {
+        "name": "Aaron Ladage",
+        "email": "aladage@degdigital.com",
+        "url": "http://aaronladage.com"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DEGJS/trapperKeeper.git"
+    },
+    "bugs": "https://github.com/DEGJS/trapperKeeper/issues",
+    "jspm": {
+        "registry": "jspm",
+        "format": "es6",
+        "main": "trapperKeeper.js",
+        "directories": {
+            "lib": "src"
+        }
+    }
+}
