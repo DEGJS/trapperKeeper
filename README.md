@@ -1,6 +1,8 @@
 # trapperKeeper
 trapperKeeper is a module for storing a basic web application's state. It uses the recently added JavaScript [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) object to create and store iterable key/value maps.
 
+**THIS REPOSITORY IS NO LONGER MAINTAINED**
+
 This plugin is based on the idea of keeping an application's state in a single state container that can be accessed across components, somewhat similar to the thinking in plugins such as [Redux](http://redux.js.org/) (although tK is much, much more simplistic in codebase and intent).
 
 ## Install
